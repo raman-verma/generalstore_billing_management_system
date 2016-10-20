@@ -7,24 +7,24 @@ import java.awt.event.*;
 import javax.swing.event.ChangeListener;
 import javax.swing.event.ChangeEvent;
 
-class MyPanel extends JPanel{
+/*class MyPanel extends JPanel{
 	Image image;
 	void setImage(String im){
 		image=new ImageIcon(im).getImage();
 		repaint();
 	}
 	public void paintComponent(Graphics g){
-		Image image=new ImageIcon("C:/db/my general store project/StoreMain/classes/images/mine1.png").getImage();
+		Image image=new ImageIcon(getClass().getResource("/image/best.png")).getImage();
 		g.drawImage(image,0,0,200,200,this);	
 	}
-}
+}*/
 
 class Profile extends JInternalFrame{
 	Container c;
 	JLabel jDeveloper,jName,jDOB,jSchool,jCollege,jCourse,jBatch,jProject,jLanguage,jSoftware,jAbout;
 	JTextField tName,tDOB,tSchool,tCollege,tCourse,tBatch,tProject,tLanguage,tSoftware;
 	JTextArea tAbout;
-	MyPanel mp;
+	//MyPanel mp;
 	
 	Profile(){
 		c=getContentPane();
@@ -33,10 +33,11 @@ class Profile extends JInternalFrame{
 		setLayout(null);
 		
 		profileFrame();
-		
-		mp=new MyPanel();
+	
+		/*mp=new MyPanel();
 		mp.setBounds(980,40,250,250);
-		c.add(mp);
+		c.add(mp);*/
+	
 		
 		JPanel profilePanel=new JPanel();
 		profilePanel.setBounds(10,10,1300,500);
